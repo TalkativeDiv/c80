@@ -16,9 +16,10 @@ let showList = () => {
 
 let searchList = () => {
   for (let j = 0; j < arrNames.length; j++) {
-    if (txtSearch1.value == arrNames[j]) found++;
+    if (txtSearch1.value == arrNames[j]) found += 1;
   }
   text = `name was found ${found} ${found === 1 ? "time" : "times"} `;
   document.getElementById("p2").innerHTML = text;
+  found = 0;
   //console.log(text);
 };
